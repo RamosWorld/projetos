@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="projeto-index.css" media="all">
+</head>
+<body>
+ <h1 id="titulo">Vamos preencher esse formulário Motinha?</h1>
+
+ <form class="father">
+ <fieldset> 
+
+    <div>
+        <label class="rotulo" for="nome"><strong>Nome</strong></label>
+        <input  class="caixa" type="text" name="nome" id="nome">
+    </div>
+    <br><br>
+    <div>
+        <label class="rotulo" for="sobrenome"><strong>Sobrenome</strong></label>
+        <input  class="caixa" type="text" name="sobrenome" id="sobrenome">
+    </div>
+    <br><br>
+    <div>
+        <label class="rotulo" for="gmail"><strong>Gmail</strong></label>
+        <input class="caixa" type="email" name="Gmail" id="gmail">
+    </div>
+    <br><br>
+    <div>
+        <label class="rotulo" for="Sexo"><strong>Sexo</strong></label>
+        <select class="caixa" name="Sexo" id="Sexo">
+            <option selected disabled value="">Escolha o seu sexo</option>
+            <option>Gay</option>
+            <option>Viado</option>
+            <option>Homossexual</option>
+            <option>Bixa</option>
+        </select>
+    </div>
+        <br><br>
+    <div>
+        <label for="profissao"><strong>Qual profissão você quer no futuro?</strong></label>
+        <input type="checkbox" name="Empreendedor" id="Empreendedor">
+        <label for="Empreendedor">Empreendedor</label>
+        <input type="checkbox" name="Programador" id="Programador">
+        <label for="Programador">Programador</label>
+        <input type="checkbox" name="Filosófo" id="Filosófo">
+        <label for="Filosófo">Filosófo</label>
+        <br><br>
+        <label for="experiencia">Fale sobre você:</label>
+        <br><br>
+        <textarea name="experiencia" id="experiencia" cols="50" rows="12"></textarea>
+
+        <br></br>
+        <button type="submit">Enviar</button>
+        <br></br>
+
+</div>
+</fieldset>
+</form>
+
+</body>
+</html>
