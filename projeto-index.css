@@ -1,60 +1,77 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
+    text-align: center;
+    color: #90bb65;
     background-color: black;
-    text-align: center;  
-}
-
-.caixa {
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    border: 1px solid;
-    border-radius: 3px;
-    animation: neon-border 3s ease-in-out infinite alternate;
-}
-
-#nome, #sobrenome {
-    display: inline-block;
-  }
-
-h1{
-    color: #2ace1b;
-}
-
-.father {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #2ace1b;
 }
 
 fieldset {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    animation: neon-border 3s ease-in-out infinite alternate;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  @keyframes neon-border {
-    0% { border-color: #ff0000; }
-    25% { border-color: rgb(255, 153, 0); }
-    50% { border-color: rgb(255, 251, 0); }
-    75% { border-color: rgb(51, 255, 0); }
-    100% { border-color: #ffffff; }}
-
-button {
-    padding: 10px 50px;
-    background-color: transparent;
-    border-radius: 5px;
-    color: white;
-    animation: neon-border 3s ease-in-out infinite alternate;
+    width: 0;
+    margin: 0 auto;
+    text-align: 5%;
+    border-radius: 15px;
+    border-color: #80ff00;
+    border-width: 7px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 0 15px #80ff00;
+    animation: sombra 2s ease-out alternate infinite;
 }
 
+@keyframes sombra {
+    0% {
+        box-shadow: 0 0 15px #33ff00;
+    }
 
-textarea {
-    background: transparent;
-    background-color: transparent;
-    border-radius: 5px;
-    color: white;
-    animation: neon-border 3s ease-in-out infinite alternate;
+    25% {
+        box-shadow: 0 0 15px #ffe600;
+    }
+
+    50% {
+        box-shadow: 0 0 15px #ff9100;
+    }
+
+    75% {
+        box-shadow: 0 0 15px #ff0000;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #e100ff;
+    }
+
+}
+
+.e1 {
+    width: 170px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+#profissao {
+    margin-top: 15px;
+    padding: 12px; 
+}
+
+#Empreendedor, #Programador, #Filosófo {
+    cursor: pointer;
+}
+
+#experiencia {  
+    font-family: cursive;
+}
+
+button {
+    border-radius: 20px;
+    border-color: #90bb65;
+    margin-top: 10px;
+    padding: 4px;
+    width: 20%;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #90bb65;
+    box-shadow: 0 0 8px #90bb65;
+    
 }
