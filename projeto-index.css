@@ -79,6 +79,7 @@ button:hover {
     background-color: rgb(26, 26, 26);
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 
 .caixa:hover {
