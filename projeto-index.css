@@ -2,7 +2,8 @@ body {
     font-family: cursive;
     text-align: center;
     color: #90bb65;
-    background-color: black;
+    background-image: linear-gradient(to bottom right, 
+    #000000, #111111, #222222, #1f1f1f, #272626);
 }
 
 fieldset {
@@ -12,30 +13,26 @@ fieldset {
     border-radius: 15px;
     border-color: #80ff00;
     border-width: 7px;
-    background-color: rgb(26, 26, 26);
-    box-shadow: 0 0 15px #80ff00;
+    background-image: linear-gradient(to right, #111111, #1a1a1a, #232323, #353535);
+    height: 0 auto;
+    box-shadow: 0 0 22px #80ff00;
     animation: sombra 2s ease-out alternate infinite;
 }
 
 @keyframes sombra {
     0% {
-        box-shadow: 0 0 15px #33ff00;
+        box-shadow: 0 0 22x #008000;
     }
 
     25% {
-        box-shadow: 0 0 15px #ffe600;
+        box-shadow: 0 0 22px #00ff00;
     }
 
     50% {
-        box-shadow: 0 0 15px #ff9100;
+        box-shadow: 0 0 22px #7fff7f;
     }
-
-    75% {
-        box-shadow: 0 0 15px #ff0000;
-    }
-
     100% {
-        box-shadow: 0 0 15px #e100ff;
+        box-shadow: 0 0 22px #c0ffc0;
     }
 
 }
@@ -48,8 +45,8 @@ fieldset {
 }
 
 #profissao {
-    margin-top: 15px;
-    padding: 12px; 
+    margin-top: 5px;
+    padding: 1px;
 }
 
 #Empreendedor, #Programador, #Filosófo {
@@ -58,11 +55,12 @@ fieldset {
 
 #experiencia {  
     font-family: cursive;
+    text-align: left;
 }
 
 button {
     border-radius: 20px;
-    border-color: #90bb65;
+    border-color: #66bd0f;
     margin-top: 10px;
     padding: 4px;
     width: 20%;
@@ -74,4 +72,35 @@ button:hover {
     color: #90bb65;
     box-shadow: 0 0 8px #90bb65;
     
+}
+
+.caixa {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.caixa:hover {
+    border-color: rgb(26, 26, 26);
+}
+
+#titulo {
+    background: linear-gradient(to right, #33ff00, #e5ff00, #ffa600, #e00808);
+	background-size: 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 5s ease infinite;
+    font-size: 40px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
 }
