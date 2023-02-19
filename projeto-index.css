@@ -1,107 +1,65 @@
-body {
-    font-family: cursive;
-    text-align: center;
-    color: #90bb65;
-    background-image: linear-gradient(to bottom right, 
-    #000000, #111111, #222222, #1f1f1f, #272626);
-}
-
-fieldset {
-    width: 0;
-    margin: 0 auto;
-    text-align: 5%;
-    border-radius: 15px;
-    border-color: #80ff00;
-    border-width: 7px;
-    background-image: linear-gradient(to right, #111111, #1a1a1a, #232323, #353535);
-    height: 0 auto;
-    box-shadow: 0 0 22px #80ff00;
-    animation: sombra 2s ease-out alternate infinite;
-}
-
-@keyframes sombra {
-    0% {
-        box-shadow: 0 0 22x #008000;
-    }
-
-    25% {
-        box-shadow: 0 0 22px #00ff00;
-    }
-
-    50% {
-        box-shadow: 0 0 22px #7fff7f;
-    }
-    100% {
-        box-shadow: 0 0 22px #c0ffc0;
-    }
-
-}
-
-.e1 {
-    width: 170px;
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-top: 2px;
-}
-
-#profissao {
-    margin-top: 5px;
-    padding: 1px;
-}
-
-#Empreendedor, #Programador, #Filosófo {
-    cursor: pointer;
-}
-
-#experiencia {  
-    font-family: cursive;
-    text-align: left;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="projeto-index.css" media="all">
+</head>
+<body>
+ <h1 id="titulo">Formulário</h1>
+ <form>
 
 
-button {
-    border-radius: 20px;
-    border-color: #66bd0f;
-    margin-top: 10px;
-    padding: 4px;
-    width: 20%;
-    font-family: cursive;
-    cursor: pointer;
-}
-
-button:hover {
-    color: #90bb65;
-    box-shadow: 0 0 8px #90bb65;
+ <fieldset > 
+    <div class="e1">
+        <label class="e1" for="nome"><strong>Nome</strong></label>
+        <input  class="caixa" type="text" name="nome" id="nome" required>
+    </div>
     
-}
+    <div class="e1">
+        <label class="e1" for="sobrenome"><strong>Sobrenome</strong></label>
+        <input  class="caixa" type="text" name="sobrenome" id="sobrenome" required> 
+    </div>
+    
+    <div>
+        <label class="e1" for="email"><strong>Email</strong></label>
+        <input class="caixa" type="email" name="Email" id="email" required> 
+    </div>
 
-.caixa {
-    background-color: rgb(26, 26, 26);
-    border-radius: 10px;
-    text-align: center;
-}
+    <div class="e1">
+        <label class="e1" for="Sexo"><strong>Sexo</strong></label>
+        <select class="caixa" name="Sexo" id="Sexo" required>
+            <option selected disabled value="">Escolha o seu sexo</option>
+            <option>Macho</option>
+            <option>Fêmia</option>
+        </select>
+    </div>
+        
+    <div id="profissao">
+        <label for="profissao"><strong>Qual profissão você quer no futuro?</strong></label>
+        
+        <label>Empreendedor</label>
+        <input class="caixa" type="checkbox" name="Empreendedor" id="Empreendedor">
+        <label>Programador</label>
+        <input class="caixa" type="checkbox" name="Programador" id="Programador">
+        <label>Filosófo</label>
+        <input class="caixa" type="checkbox" name="Filosófo" id="Filosófo">
+        <br><br>
+    </div>
 
-.caixa:hover {
-    border-color: rgb(26, 26, 26);
-}
+    <div>
+        <label for="experiencia">Fale sobre você:</label>
+        <textarea class="caixa" name="experiencia" id="experiencia" cols="40" rows="8"></textarea required>
+    </div>
 
-#titulo {
-    background: linear-gradient(to right, #33ff00, #e5ff00, #ffa600, #e00808);
-	background-size: 400%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradient 5s ease infinite;
-    font-size: 40px;
-}
+    <div id="botao">
+        <button class="caixa" type="submit">Enviar</button>
+    </div>
 
-@keyframes gradient {
-	0% {
-		background-position: 0%;
-	}
-	50% {
-		background-position: 100%;
-	}
-	100% {
-		background-position: 0%;
-	}
-}
+</fieldset>
+</form>
+
+</body>
+</html>
