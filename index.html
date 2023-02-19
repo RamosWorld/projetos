@@ -8,55 +8,57 @@
     <link rel="stylesheet" type="text/css" href="projeto-index.css" media="all">
 </head>
 <body>
- <h1 id="titulo">Vamos preencher esse formulário Motinha?</h1>
+ <h2 id="titulo">Vamos preencher esse formulário Carlos?</h2>
 
- <form class="father">
- <fieldset> 
+ <form>
 
-    <div>
-        <label class="rotulo" for="nome"><strong>Nome</strong></label>
-        <input  class="caixa" type="text" name="nome" id="nome">
+
+ <fieldset > 
+    <div class="e1">
+        <label class="e1" for="nome"><strong>Nome</strong></label>
+        <input  class="caixa" type="text" name="nome" id="nome" required>
     </div>
-    <br><br>
-    <div>
-        <label class="rotulo" for="sobrenome"><strong>Sobrenome</strong></label>
-        <input  class="caixa" type="text" name="sobrenome" id="sobrenome">
+    
+    <div class="e1">
+        <label class="e1" for="sobrenome"><strong>Sobrenome</strong></label>
+        <input  class="caixa" type="text" name="sobrenome" id="sobrenome" required> 
     </div>
-    <br><br>
+    
     <div>
-        <label class="rotulo" for="gmail"><strong>Gmail</strong></label>
-        <input class="caixa" type="email" name="Gmail" id="gmail">
+        <label class="e1" for="gmail"><strong>Gmail</strong></label>
+        <input class="caixa" type="email" name="Gmail" id="gmail" required> 
     </div>
-    <br><br>
-    <div>
-        <label class="rotulo" for="Sexo"><strong>Sexo</strong></label>
-        <select class="caixa" name="Sexo" id="Sexo">
+
+    <div class="e1">
+        <label class="e1" for="Sexo"><strong>Sexo</strong></label>
+        <select class="caixa" name="Sexo" id="Sexo" required>
             <option selected disabled value="">Escolha o seu sexo</option>
-            <option>Gay</option>
-            <option>Viado</option>
-            <option>Homossexual</option>
-            <option>Bixa</option>
+            <option>Macho</option>
+            <option>Fêmia</option>
         </select>
     </div>
-        <br><br>
-    <div>
+        
+    <div id="profissao">
         <label for="profissao"><strong>Qual profissão você quer no futuro?</strong></label>
+        
+        <label>Empreendedor</label>
         <input type="checkbox" name="Empreendedor" id="Empreendedor">
-        <label for="Empreendedor">Empreendedor</label>
+        <label>Programador</label>
         <input type="checkbox" name="Programador" id="Programador">
-        <label for="Programador">Programador</label>
+        <label>Filosófo</label>
         <input type="checkbox" name="Filosófo" id="Filosófo">
-        <label for="Filosófo">Filosófo</label>
         <br><br>
+    </div>
+
+    <div id="experiencia">
         <label for="experiencia">Fale sobre você:</label>
-        <br><br>
-        <textarea name="experiencia" id="experiencia" cols="50" rows="12"></textarea>
+        <textarea name="experiencia" id="experiencia" cols="40" rows="8"></textarea required>
+    </div>
 
-        <br></br>
+    <div id="botao">
         <button type="submit">Enviar</button>
-        <br></br>
+    </div>
 
-</div>
 </fieldset>
 </form>
 
