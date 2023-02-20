@@ -3,19 +3,18 @@ body {
     text-align: center;
     background-image: linear-gradient(to bottom right, 
     #000000, #111111, #222222, #1f1f1f, #272626);
-    background-image: linear-gradient(to bottom right, #000000, #111111, #222222, #1f1f1f, #272626);
   }
 
 fieldset {
     width: 0;
     margin: 0 auto;
-    text-align: 5%;
+    text-align: center;
     border-radius: 15px;
     border-color: #80ff00;
     border-width: 7px;
     background-image: linear-gradient(to right, #111111, #1a1a1a, #232323, #353535);
     height: 0 auto;
-    box-shadow: 0 0 23px #80ff00;
+    box-shadow: 0 0 2px #80ff00;
     animation: sombra 2s ease-out alternate infinite;
 }
 
@@ -25,17 +24,17 @@ fieldset {
     }
 
     50% {
-        box-shadow: 0 0 18px #00ff00;
+        box-shadow: 0 0 14px #00ff00;
     }
 
     100% {
-        box-shadow: 0 0 22px #7fff7f;
+        box-shadow: 0 0 18px #7fff7f;
     }
 
 }
 
 .e1 {
-    width: 170px;
+    width: 200px;
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 2px;
