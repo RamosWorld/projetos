@@ -1,0 +1,132 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, 
+    #000000, #111111, #222222, #1f1f1f, #272626);
+    background-image: linear-gradient(to bottom right, #000000, #111111, #222222, #1f1f1f, #272626);
+  }
+
+fieldset {
+    width: 0;
+    margin: 0 auto;
+    text-align: 5%;
+    border-radius: 15px;
+    border-color: #80ff00;
+    border-width: 7px;
+    background-image: linear-gradient(to right, #111111, #1a1a1a, #232323, #353535);
+    height: 0 auto;
+    box-shadow: 0 0 23px #80ff00;
+    animation: sombra 2s ease-out alternate infinite;
+}
+
+@keyframes sombra {
+    0% {
+        box-shadow: 0 0 20x #4eb645;
+    }
+
+    50% {
+        box-shadow: 0 0 18px #00ff00;
+    }
+
+    100% {
+        box-shadow: 0 0 22px #7fff7f;
+    }
+
+}
+
+.e1 {
+    width: 170px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: green;
+}
+
+#profissao {
+    margin-top: 7px;
+    padding: 12px;
+    margin-bottom: 13px;
+    color: rgb(173, 171, 171);
+}
+
+#Empreendedor, #Programador, #Filosófo {
+    cursor: pointer;
+}
+
+#experiencia {  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    color: rgb(173, 171, 171);
+}
+
+textarea {
+    margin-top: 11px;
+    font-size: medium;
+}
+
+
+#botao {
+    border-radius: 10px;
+    border-color: #66bd0f;
+    border-width: 3px;
+    margin-top: 15px;
+    padding: 4px;
+    width: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    background: linear-gradient(to right, #ff0000, #cc3333, #bd5500, #b86506, #ffe600, #d8ff4b, 
+        #9fe400, #15ff00, #2ae4da, #00d9ff, #338abd, #0088d6, #2a4ab4, #0004ff, #9f5deb, 
+        #8c00ff, #f700ff, #d368ca, #f700ff);
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 10s ease infinite;
+        font-size: 15px;
+    }
+
+.caixa {
+    background-color: rgb(26, 26, 26);
+    border-radius: 7px;
+    text-align: center;
+    color: rgb(173, 171, 171);
+}
+
+.caixa:hover {
+    border-color: rgb(173, 171, 171);
+}
+
+#titulo {
+   
+	 background-image: linear-gradient(to right, #ff0000, #cc3333, #bd5500, #b86506, #ffe600, #d8ff4b, 
+     #9fe400, #15ff00, #2ae4da, #00d9ff, #338abd, #0088d6, #2a4ab4, #0004ff, #f700ff, #cb88ce, #d47171, #d35353);
+  background-size: 400% auto;
+  background-position: 0 0;
+  animation: onda-direita 13s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+@keyframes onda-direita {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
